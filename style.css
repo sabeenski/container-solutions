@@ -61,6 +61,10 @@ body p{
     position: absolute; 
 }
 
+.shadowed-title span {
+  position: relative;
+}
+
 .row {
   padding: 4px;
 }
@@ -233,11 +237,6 @@ span {
   .container h1::after {
     width: 155px;
   }
-
-  .shadowed-title span span {
-    margin: -57px 0 0 -5px;
-
-  }
   
   .banner p {
     padding: 10px;
@@ -245,4 +244,18 @@ span {
     justify-content: center;
   }
 
+}
+
+@media screen and (min-width:396px) and (max-width: 440px) {
+
+  .shadowed-title span span {
+    display: none
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .shadowed-title span span {
+    margin: -115px 0 0 -5px;
+
+  }
 }
