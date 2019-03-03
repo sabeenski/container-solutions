@@ -61,10 +61,6 @@ body p{
     position: absolute; 
 }
 
-.shadowed-title span {
-  position: relative;
-}
-
 .row {
   padding: 4px;
 }
@@ -168,6 +164,10 @@ span {
   padding-top: 5px; 
 }
 
+
+
+
+
 /* MAKING MOBILE RESPONSIVE */
 
 @media screen and (max-width: 991px) {
@@ -207,9 +207,9 @@ span {
   
 }
 
-  @media screen and (max-width: 1199px){
+@media screen and (max-width: 1199px){
 
-  br {
+  .row br {
     display: none
   }
 
@@ -257,5 +257,19 @@ span {
   .shadowed-title span span {
     margin: -115px 0 0 -5px;
 
+  }
+}
+
+
+/* CROSS BROWSER COMPATIBILITY */
+
+@-moz-document url-prefix() {
+  .row br {
+    display: none
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .row br {
+    display: none
   }
 }
