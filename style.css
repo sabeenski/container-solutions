@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+body p{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.banner {
+  background: #2740F8 url('images/bg.png') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 588px;
+  text-align: center;
+  padding-top: 105px;
+}
+
+.banner p {
+  margin-top: 43px;
+  color:#1DD5B2;
+  font-size: 25px;
+}
+
+.banner button {
+  background: #ff16aa;
+  border: none;
+  height: 62px;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 58px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+
+
+.container h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 60px auto;
+  font-family: 'route_159_heavy', sans-serif
+}
+
+.container h1::after {
+    content: "";
+    display: block;
+    width: 230px;
+    height: 5px;
+    background-color: #1DD5B2;
+    position: absolute;
+}
+
+.shadowed-title span span {
+    z-index: -1;
+    margin: -93px 0 0 -5px;
+    -webkit-text-fill-color: transparent;
+    background: #2740F8 url(images/text-shadow.png);
+    background-clip: text;
+    -webkit-background-clip: text;   
+    position: absolute; 
+}
+
+.row {
+  padding: 4px;
+}
+
+.row-1 {
+  height: 318px;
+  margin-top: 80px;
+}
+.row-2 {
+  height: 355px;
+}
+.row-3 {
+  height: 210px;
+}
+.row-4 {
+  height: 206px;
+}
+.row-5 {
+  height: 380px;  
+}
+
+.text {
+  color: white;
+  background-color: #2740F8;
+}
+
+.text p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  padding-top: 50px ;
+  padding-right: 30px;
+  padding-bottom: auto;
+  padding-left: 30px;
+}
+
+.row-2 .text p {
+  padding: 70px 5px 5px
+}
+
+.row-5 .text p {
+  padding-left: 70px;
+}
+
+.row-4 .text p {
+  padding-left: 20px;
+}
+.row-5 .text {
+  background: #2740F8 url('images/bg.png') right center;
+  background-size: cover;
+}
+
+.mr {
+  margin-right: 0.5rem
+}
+
+
+.image1 {
+  background: url('images/image1.png') no-repeat ;
+  background-size: 100% 100%;
+}
+.image2 {
+  background: url('images/image2.png') no-repeat;
+  background-size: 100% 100%;
+}
+.image3 {
+  background: url('images/image3.png') no-repeat;
+  background-size: 100% 100%;
+}
+.image4 {
+  background: url('images/image4.png') no-repeat;
+  background-size: 100% 100%;
+}
+.image5 {
+  background: url('images/image5.png') no-repeat;
+  background-size: 100% 100%;
+}
+.image6 {
+  background: url('images/image6.png') no-repeat;
+  background-size: 100% 100%;
+}
+.image7 {
+  background: url('images/image7.png') no-repeat center;
+  background-size: 100% 100%;
+}
+
+.footer {
+  background: #2740F8 url('images/bg.png') center center;
+  background-size: cover;
+  height: 102px;
+  margin-top: 112px;
+}
+
+.footer img {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+span {
+  display: block;
+  padding-top: 5px; 
+}
+
+/* MAKING MOBILE RESPONSIVE */
+
+@media screen and (max-width: 991px) {
+  .row {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding-left: 30px;
+    padding-bottom: 0px;
+  }
+
+  .mr {
+    margin-right: auto;
+  }
+
+  .image {
+    min-height: 160px;
+    margin-bottom: 4px;
+  }
+
+  .text {
+    margin-bottom: 4px; 
+    max-height: 240px;
+  }
+  
+  .text p , .row-2 .text p, .row-5 .text p {
+    padding: 20px;
+    font-size: 12px;
+  }
+  
+  .row-5 {
+    padding-top:5px
+  }
+  
+  .image3 {
+    display: none;
+  }
+  
+}
+
+  @media screen and (max-width: 1199px){
+
+  br {
+    display: none
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .container h1 {
+    font-size: 50px;
+  }
+  .container h1::after {
+    width: 170px;
+  }
+  
+  .shadowed-title span span {
+    margin: -68px 0 0 -6px;
+  }
+  
+}
+
+@media screen and (max-width: 440px) {
+  .container h1 {
+    font-size: 45px;
+  }
+
+  .container h1::after {
+    width: 155px;
+  }
+
+  .shadowed-title span span {
+    margin: -57px 0 0 -5px;
+
+  }
+  
+  .banner p {
+    padding: 10px;
+    font-size: 23px;
+    justify-content: center;
+  }
+
+}
