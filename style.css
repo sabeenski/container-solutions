@@ -108,8 +108,7 @@ body p{
   padding-left: 20px;
 }
 .row-5 .text {
-  background: #2740F8 url('images/bg.png') right center;
-  background-size: cover;
+  background: #2740F8 url('images/bg.png') center center;
 }
 
 .mr {
