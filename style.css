@@ -32,8 +32,6 @@ body p{
   cursor: pointer;
 }
 
-
-
 .container h1 {
   font-size: 70px;
   text-transform: uppercase;
@@ -53,7 +51,7 @@ body p{
 
 .shadowed-title span span {
     z-index: -1;
-    margin: -93px 0 0 -5px;
+    margin: -91px 0 0 -5px;
     -webkit-text-fill-color: transparent;
     background: #2740F8 url(images/text-shadow.png);
     background-clip: text;
@@ -108,13 +106,16 @@ body p{
   padding-left: 20px;
 }
 .row-5 .text {
-  background: #2740F8 url('images/bg.png') center center;
+  background: #2740F8 url('images/bg.png') left top;
 }
 
 .mr {
   margin-right: 0.5rem
 }
 
+.image {
+  background: grey
+}
 
 .image1 {
   background: url('images/image1.png') no-repeat ;
@@ -208,7 +209,6 @@ span {
 }
 
 @media screen and (max-width: 1199px){
-
   .row br {
     display: none
   }
@@ -224,7 +224,7 @@ span {
   }
   
   .shadowed-title span span {
-    margin: -68px 0 0 -6px;
+    margin: -66px 0 0 -5px;
   }
   
 }
@@ -243,21 +243,30 @@ span {
     font-size: 23px;
     justify-content: center;
   }
-
 }
 
-@media screen and (min-width:396px) and (max-width: 440px) {
+@media screen and (min-width:376px) and (max-width: 440px) {
 
   .shadowed-title span span {
-    display: none
+    margin: -58px 0 0 -5px;
+
   }
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 375px) {
   .shadowed-title span span {
-    margin: -115px 0 0 -5px;
+    margin: -54px 0 0 -3px;
 
   }
+
+  .container h1::after {
+    width: 145px;
+  }
+
+  .container h1 {
+    font-size: 40px;
+  }
+  
 }
 
 
@@ -267,6 +276,19 @@ span {
   .row br {
     display: none
   }
+
+  @media screen and (max-width: 405px) {
+
+    .container h1 {
+      font-size: 36px;
+    }
+
+    .shadowed-title span span {
+      margin: -48px 0 0 -3px;
+    }
+  }
+
+  
 }
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   .row br {
