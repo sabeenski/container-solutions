@@ -51,7 +51,7 @@ body p{
 
 .shadowed-title span span {
     z-index: -1;
-    margin: -91px 0 0 -5px;
+    margin: -93px 0 0 -5px;
     -webkit-text-fill-color: transparent;
     background: #2740F8 url(images/text-shadow.png);
     background-clip: text;
@@ -253,9 +253,9 @@ span {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
   .shadowed-title span span {
-    margin: -54px 0 0 -3px;
+    margin: -56px 0 0 -3px;
 
   }
 
@@ -269,6 +269,16 @@ span {
   
 }
 
+
+@media screen and (max-width: 374px) {
+  .shadowed-title span span {
+    margin: -43px 0 0 -3px;
+
+  }
+  .container h1 {
+    font-size: 30px;
+  }
+}
 
 /* CROSS BROWSER COMPATIBILITY */
 
@@ -284,7 +294,7 @@ span {
     }
 
     .shadowed-title span span {
-      margin: -48px 0 0 -3px;
+      margin: -51px 0 0 -3px;
     }
   }
 
